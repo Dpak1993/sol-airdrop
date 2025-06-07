@@ -42,29 +42,32 @@ sol-airdrop/
 ---
 
 ## 🧪 Usage
+# 💧 Solana Token Faucet (Devnet)
 
-### 1. Build & deploy to localnet
->>>>>>> Update polished README
+This is a simple dApp that allows users to:
 
-```bash
-anchor build
-anchor deploy
-<<<<<<< HEAD
-=======
+- Connect their Phantom wallet (on Devnet)
+- Request 1 SOL airdrop using Solana Web3.js
 
-### 2. Run the CLI airdrop script
+## 🚀 Demo
 
+1. Clone the repo
+2. Start the frontend:
+   ```bash
+   cd frontend
+   python3 -m http.server 8000
+3.Open http://localhost:8000
 
+4.Connect Phantom (on Devnet)
 
-export ANCHOR_PROVIDER_URL=http://127.0.0.1:8899
-export ANCHOR_WALLET=~/.config/solana/id.json
-yarn ts-node scripts/airdrop.ts
+5.Click “Request Airdrop”
 
-### Output:
+📦 Stack
+HTML + JavaScript (Frontend)
 
+@solana/web3.js for blockchain interactions
 
+📌 Notes
+This is Devnet-only.
 
-✅ State initialized
-✅ Airdrop TX Hash: <hash>
-💸 Sent 1000000 lamports to <recipient>
->>>>>>> Update polished README
+Will evolve into a full SPL Token Faucet with Anchor backend.
